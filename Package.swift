@@ -10,10 +10,10 @@ let package = Package(
     products: [
         .library(
             name: "ImageSlideshow",
-            targets: ["ImageSlideshow"])
+            targets: ["ImageSlideshow"]
+        )
     ],
-    dependencies: [
-    ],
+    dependencies: [ ],
     targets: [
         .target(
             name: "ImageSlideshow",
@@ -30,12 +30,13 @@ let package = Package(
                 "Classes/Core/SwiftSupport.swift",
                 "Classes/Core/UIImage+AspectFit.swift",
                 "Classes/Core/UIImageView+Tools.swift",
-                "Classes/Core/ZoomAnimatedTransitioning.swift",
+                "Classes/Core/ZoomAnimatedTransitioning.swift"
             ],
             resources: [
                 .copy("Assets/ic_cross_white@2x.png"),
-                .copy("Assets/ic_cross_white@3x.png"),
-            ])
+                .copy("Assets/ic_cross_white@3x.png")
+            ]
+        )
     ],
     swiftLanguageVersions: [.v4, .v4_2, .v5]
 )
